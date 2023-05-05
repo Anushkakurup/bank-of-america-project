@@ -122,10 +122,6 @@ class Transfer(object):
         deposit =Deposit(amount, acc2, remarks)
         self.date=datetime.datetime.now()
         
-       
-
-
-# In[5]:
 
 
 cust_list  = [Customer("S87654321Z","anusha", []),Customer("S81231231Z","anusha", []),Customer("S87454321Z","anusha", [])]
@@ -152,10 +148,3 @@ transfer = Transfer(acc2, acc1, 20, "treat him for lunch")
 print(acc1.transaction_report(start_time, end_time))
 
 print(bank.transaction_report(start_time, end_time))
-
-
-# In[ ]:
-
-
-
-
