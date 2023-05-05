@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
 
 
 import datetime
@@ -123,28 +122,3 @@ class Transfer(object):
         self.date=datetime.datetime.now()
         
 
-
-cust_list  = [Customer("S87654321Z","anusha", []),Customer("S81231231Z","anusha", []),Customer("S87454321Z","anusha", [])]
-bank = Bank('DBS')
-branch = Branch('main branch', bank)
-acc1 = Account("2345679", 100000, cust_list[0], branch)
-acc2 = Account("1234970", 100000, cust_list[0], branch)
-acc3 = Account("2315678", 100000, cust_list[1], branch)
-acc4 = Account("6345678", 100000, cust_list[1], branch)
-acc5 = Account("7345678", 100000, cust_list[2], branch)
-acc6 = Account("7935678", 100000, cust_list[2], branch)
-       
-acc1_withdrawl = Withdraw(10, acc1, "money for lunch")
-acc1.balance
-
-acc1_withdrawl = Withdraw(10, acc1, "money for lunch")
-acc1.balance
-
-start_time = datetime.datetime(2020, 1,1)
-end_time = datetime.datetime.now()
-print(acc1.transaction_report(start_time, end_time))
-transfer = Transfer(acc2, acc1, 20, "treat him for lunch")
-
-print(acc1.transaction_report(start_time, end_time))
-
-print(bank.transaction_report(start_time, end_time))
